@@ -15,13 +15,7 @@ public class Student
         Age = age;
     }
 
-    protected string WakeUp(int atHours)
-    {
-        return $"I wake up at {atHours}:00 AM";
-    }
+    protected string WakeUp(int atHours) => $"I wake up at {atHours}:00 AM";
 
-    protected string GetFullName()
-    {
-        return $"{FirstName} {LastName}";
-    }
+    protected string GetFullName() => $"{FirstName} {LastName}";
 }

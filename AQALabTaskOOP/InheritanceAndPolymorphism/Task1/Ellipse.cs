@@ -11,23 +11,14 @@ public class Ellipse : Shape
         MinRadius = minRadius;
     }
 
-    public override double CalculatePerimeter()
-    {
-        return 2 * Math.PI * Math.Sqrt((Math.Pow(MaxRadius, 2) + Math.Pow(MinRadius, 2)) / 2);
-    }
+    public override double CalculatePerimeter() =>
+        2 * Math.PI * Math.Sqrt((Math.Pow(MaxRadius, 2) + Math.Pow(MinRadius, 2)) / 2);
 
-    public override double CalculateArea()
-    {
-        return Math.PI * MaxRadius * MinRadius;
-    }
+    public override double CalculateArea() => Math.PI * MaxRadius * MinRadius;
 
-    public override string GetDrawingInstructions()
-    {
-        return $"{base.GetDrawingInstructions()}, Max radius: {MaxRadius}, Min radius: {MinRadius}" ;
-    }
+    public override string GetDrawingInstructions() =>
+        $"{base.GetDrawingInstructions()}, Max radius: {MaxRadius}, Min radius: {MinRadius}";
 
-    public string GetDrawingInstructions(string additionalInstructions)
-    {
-        return GetDrawingInstructions() + additionalInstructions;
-    }
+    public string GetDrawingInstructions(string additionalInstructions) =>
+        GetDrawingInstructions() + additionalInstructions;
 }

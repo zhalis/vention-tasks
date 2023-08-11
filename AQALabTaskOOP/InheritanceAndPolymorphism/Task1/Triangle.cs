@@ -19,8 +19,5 @@ public class Triangle : Shape
         return Math.Sqrt(perimeter * (perimeter - SideA) * (perimeter - SideB) * (perimeter - SideC));
     }
 
-    public override double CalculatePerimeter()
-    {
-        return SideA + SideB + SideC;
-    }
+    public override double CalculatePerimeter() => SideA + SideB + SideC;
 }

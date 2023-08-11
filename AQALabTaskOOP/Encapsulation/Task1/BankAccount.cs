@@ -28,11 +28,6 @@ public class BankAccount
     public void WithdrawMoneyFromAccount(double amountToWithdraw)
     {
         Notify?.Invoke($"Attempt to withdraw from account {amountToWithdraw}$");
-        if (amountToWithdraw > Balance)
-        {
-            throw new NotEnoughMoneyException(Balance);
-        }
-
-        Balance -= amountToWithdraw;
+        _ = amountToWithdraw > Balance ? throw new NotEnoughMoneyException(Balance) : Balance -= amountToWithdraw;
     }
 }

@@ -12,15 +12,9 @@ public class ElectricCar : Car
         RangePerCharge = rangePerCharge;
     }
 
-    protected override void StartEngine()
-    {
-        Console.WriteLine("Electric engine started");
-    }
+    protected override void StartEngine() => Console.WriteLine("Electric engine started");
 
-    protected sealed override void OpenDoor()
-    {
-        base.OpenDoor();
-    }
+    protected sealed override void OpenDoor() => base.OpenDoor();
 
     protected new void StopEngine()
     {

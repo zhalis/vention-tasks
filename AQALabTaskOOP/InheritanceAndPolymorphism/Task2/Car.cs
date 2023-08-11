@@ -15,18 +15,9 @@ public abstract class Car
         Price = price;
     }
 
-    protected virtual void StartEngine()
-    {
-        Console.WriteLine("Engine started");
-    }
+    protected virtual void StartEngine() => Console.WriteLine("Engine started");
 
-    protected virtual void OpenDoor()
-    {
-        Console.WriteLine("Door is opened");
-    }
+    protected virtual void OpenDoor() => Console.WriteLine("Door is opened");
 
-    protected void StopEngine()
-    {
-        Console.WriteLine("Engine is stopped");
-    }
+    protected void StopEngine() => Console.WriteLine("Engine is stopped");
 }

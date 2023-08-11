@@ -11,13 +11,7 @@ public class Rectangle : Shape
         SideB = sideB;
     }
 
-    public override double CalculateArea()
-    {
-        return SideA * SideB;
-    }
+    public override double CalculateArea() => SideA * SideB;
 
-    public override double CalculatePerimeter()
-    {
-        return 2 * (SideA + SideB);
-    }
+    public override double CalculatePerimeter() => 2 * (SideA + SideB);
 }

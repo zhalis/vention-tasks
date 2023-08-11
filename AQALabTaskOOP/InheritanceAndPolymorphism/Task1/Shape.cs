@@ -8,10 +8,8 @@ public abstract class Shape : IDrawable
 
     public void Draw() => Console.WriteLine(GetShapeName());
 
-    public virtual string GetDrawingInstructions()
-    {
-        return $"Shape name: {GetShapeName()}, Perimeter: {CalculatePerimeter()}, Area: {CalculateArea()}";
-    }
+    public virtual string GetDrawingInstructions() =>
+        $"Shape name: {GetShapeName()}, Perimeter: {CalculatePerimeter()}, Area: {CalculateArea()}";
 
     private string GetShapeName() => GetType().Name;
 }

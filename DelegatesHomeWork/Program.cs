@@ -7,10 +7,7 @@
         Func<int, int, int> subtract = (firstNum, secondNum) => firstNum - secondNum;
         Func<int, int, int> multiply = (firstNum, secondNum) => firstNum * secondNum;
         Func<int, int, int> divide = (firstNum, secondNum) =>
-        {
-            if (secondNum == 0) throw new DivideByZeroException("Can't divide by zero!");
-            return firstNum / secondNum;
-        };
+            secondNum == 0 ? throw new DivideByZeroException("Can't divide by zero!") : firstNum / secondNum;
 
         Action<int> print = result => Console.WriteLine($"The result of operation is: {result}");
 
