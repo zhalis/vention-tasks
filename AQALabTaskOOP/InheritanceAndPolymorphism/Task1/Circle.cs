@@ -9,18 +9,9 @@ public class Circle : Shape
         Radius = radius;
     }
 
-    public override double CalculateArea()
-    {
-        return Math.PI * Math.Pow(Radius, 2);
-    }
+    public override double CalculateArea() => Math.PI * Math.Pow(Radius, 2);
 
-    public override double CalculatePerimeter()
-    {
-        return 2 * Math.PI * Radius;
-    }
+    public override double CalculatePerimeter() => 2 * Math.PI * Radius;
 
-    public override string GetDrawingInstructions()
-    {
-        return $"{base.GetDrawingInstructions()}, Radius: {Radius}" ;
-    }
+    public override string GetDrawingInstructions() => $"{base.GetDrawingInstructions()}, Radius: {Radius}";
 }

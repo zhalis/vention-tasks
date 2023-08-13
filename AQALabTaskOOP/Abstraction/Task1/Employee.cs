@@ -15,9 +15,7 @@ public abstract class Employee
         Salary = salary;
     }
 
-    public override string ToString()
-    {
-        return $"{nameof(EmployeeId)}: {EmployeeId}, {nameof(Name)}: {Name}, {nameof(Salary)}: {Salary}, " +
-               $"{nameof(Position)}: {Position}";
-    }
+    public override string ToString() =>
+        $"{nameof(EmployeeId)}: {EmployeeId}, {nameof(Name)}: {Name}, {nameof(Salary)}: {Salary}, " +
+        $"{nameof(Position)}: {Position}";
 }

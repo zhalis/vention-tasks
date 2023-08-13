@@ -9,18 +9,9 @@ public class Square : Shape
         SideA = sideA;
     }
 
-    public override double CalculatePerimeter()
-    {
-        return SideA * 4;
-    }
+    public override double CalculatePerimeter() => SideA * 4;
 
-    public override double CalculateArea()
-    {
-        return Math.Pow(SideA, 2);
-    }
+    public override double CalculateArea() => Math.Pow(SideA, 2);
 
-    public override string GetDrawingInstructions()
-    {
-        return $"{base.GetDrawingInstructions()}, Side: {SideA}";
-    }
+    public override string GetDrawingInstructions() => $"{base.GetDrawingInstructions()}, Side: {SideA}";
 }

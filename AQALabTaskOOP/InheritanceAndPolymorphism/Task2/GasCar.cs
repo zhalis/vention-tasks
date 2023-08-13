@@ -12,13 +12,7 @@ public class GasCar : Car
         FuelEfficiency = fuelEfficiency;
     }
 
-    protected override void StartEngine()
-    {
-        Console.WriteLine("Gas engine is started");
-    }
+    protected override void StartEngine() => Console.WriteLine("Gas engine is started");
 
-    protected sealed override void OpenDoor()
-    {
-        base.OpenDoor();
-    }
+    protected sealed override void OpenDoor() => base.OpenDoor();
 }
